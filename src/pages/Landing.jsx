@@ -260,26 +260,8 @@ export default function Landing({ onGetStarted, theme, onToggleTheme }) {
           <div className="section-header">
             <h2 className="section-title">Courses</h2>
           </div>
-          <p className="nav-intro-copy">Role-based learning paths that combine theory and practical labs.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>Specialized Tracks</h3>
-              <p>Follow offensive, defensive, and cloud-focused curricula.</p>
-              <ul>
-                <li>Beginner to advanced progression</li>
-                <li>Practical lab checkpoints</li>
-                <li>Guided module assessments</li>
-              </ul>
-            </article>
-            <article className="nav-intro-card">
-              <h3>Applied Practice</h3>
-              <p>Bridge concepts with scenario-driven exercises and capture-the-flag style tasks.</p>
-              <ul>
-                <li>Hands-on environments</li>
-                <li>Real attack/defense patterns</li>
-                <li>Portfolio-ready outcomes</li>
-              </ul>
-            </article>
+          <div className="content-watermark" aria-label="Courses content coming soon">
+            CONTENT TO BE ADDED
           </div>
         </section>
 
@@ -287,26 +269,8 @@ export default function Landing({ onGetStarted, theme, onToggleTheme }) {
           <div className="section-header">
             <h2 className="section-title">Instructors</h2>
           </div>
-          <p className="nav-intro-copy">Learn from practitioners with incident response and red/blue team experience.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>Mentor-Led Learning</h3>
-              <p>Get support from experts who have solved production-grade security incidents.</p>
-              <ul>
-                <li>Office hours and Q&A sessions</li>
-                <li>Recorded attack walkthroughs</li>
-                <li>Cohort feedback loops</li>
-              </ul>
-            </article>
-            <article className="nav-intro-card">
-              <h3>Career Guidance</h3>
-              <p>Understand role expectations and practical skills needed for modern security teams.</p>
-              <ul>
-                <li>Role-mapped skill suggestions</li>
-                <li>Structured learning milestones</li>
-                <li>Practical interview prep context</li>
-              </ul>
-            </article>
+          <div className="content-watermark" aria-label="Instructors content coming soon">
+            CONTENT TO BE ADDED
           </div>
         </section>
 
@@ -314,100 +278,57 @@ export default function Landing({ onGetStarted, theme, onToggleTheme }) {
           <div className="section-header">
             <h2 className="section-title">Certifications</h2>
           </div>
-          <p className="nav-intro-copy">Earn verifiable credentials that map to real security roles and outcomes.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>Certification Advantages</h3>
-              <p>Showcase validated skill depth with practical evidence beyond course completion.</p>
-              <ul>
-                <li>Career-ready proof of skills</li>
-                <li>Portfolio-ready capstone reports</li>
-                <li>Shareable digital badges</li>
-              </ul>
-            </article>
-            <article className="nav-intro-card">
-              <h3>Outcome Visibility</h3>
-              <p>Track progress from study to exam readiness with transparent milestone indicators.</p>
-              <ul>
-                <li>Clear exam preparation roadmap</li>
-                <li>Lab completion evidence</li>
-                <li>Credential history timeline</li>
-              </ul>
-            </article>
+          <div className="content-watermark" aria-label="Certifications content coming soon">
+            CONTENT TO BE ADDED
           </div>
         </section>
 
-        <section className="nav-intro-section" id="section-company">
+        <footer className="org-footer" id="section-company" aria-labelledby="org-footer-title">
           <div className="section-header">
-            <h2 className="section-title">Company</h2>
+            <h2 className="section-title" id="org-footer-title">Company</h2>
           </div>
-          <p className="nav-intro-copy">Trusted by teams to onboard and upskill security talent at scale.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>Company Overview</h3>
-              <p>Explore who we are, how we hire, and how to connect with our team.</p>
+          <div className="org-footer-grid">
+            <section className="org-footer-column">
+              <h3>Main Links</h3>
               <ul>
-                <li>About: mission and training philosophy</li>
-                <li>Careers: join our team and build with us</li>
-                <li>Contact: speak with support and partnerships</li>
+                <li><a href="#section-company-about">About</a></li>
+                <li><a href="#section-company-careers">Careers</a></li>
+                <li><a href="#section-company-contact">Contact</a></li>
+                <li><a href="#section-courses">Courses</a></li>
               </ul>
-            </article>
-          </div>
-        </section>
+            </section>
 
-        <section className="nav-intro-section" id="section-company-about">
-          <div className="section-header">
-            <h2 className="section-title">About</h2>
-          </div>
-          <p className="nav-intro-copy">We build practical security education that mirrors real operational environments.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>What We Focus On</h3>
-              <p>Our platform is designed around applied outcomes, not just content completion.</p>
+            <section className="org-footer-column" id="section-company-about">
+              <h3>About</h3>
               <ul>
-                <li>Hands-on-first learning design</li>
-                <li>Role-aligned progression paths</li>
-                <li>Continuous curriculum updates</li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Training Philosophy</a></li>
+                <li><a href="#">Security Standards</a></li>
+                <li><a href="#">Partners</a></li>
               </ul>
-            </article>
-          </div>
-        </section>
+            </section>
 
-        <section className="nav-intro-section" id="section-company-careers">
-          <div className="section-header">
-            <h2 className="section-title">Careers</h2>
-          </div>
-          <p className="nav-intro-copy">Join a team shaping the next generation of cybersecurity professionals.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>Work With Us</h3>
-              <p>We hire across engineering, instruction, and learner success roles.</p>
+            <section className="org-footer-column" id="section-company-careers">
+              <h3>Careers</h3>
               <ul>
-                <li>Remote and hybrid opportunities</li>
-                <li>Security-focused product challenges</li>
-                <li>Strong growth and mentorship culture</li>
+                <li><a href="#">Open Roles</a></li>
+                <li><a href="#">Internships</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Benefits</a></li>
               </ul>
-            </article>
-          </div>
-        </section>
+            </section>
 
-        <section className="nav-intro-section" id="section-company-contact">
-          <div className="section-header">
-            <h2 className="section-title">Contact</h2>
-          </div>
-          <p className="nav-intro-copy">Talk to us about training programs, support, or partnership opportunities.</p>
-          <div className="nav-intro-grid">
-            <article className="nav-intro-card">
-              <h3>Get In Touch</h3>
-              <p>Our team can help you choose the right path for individuals and organizations.</p>
+            <section className="org-footer-column" id="section-company-contact">
+              <h3>Contact</h3>
               <ul>
-                <li>Learning and onboarding support</li>
-                <li>Enterprise and team plans</li>
-                <li>Partnership and integration requests</li>
+                <li><a href="mailto:contact@zecurx.com">contact@zecurx.com</a></li>
+                <li><a href="tel:+15550101234">+1 (555) 010-1234</a></li>
+                <li>Mon-Fri, 9:00 AM - 6:00 PM</li>
+                <li>120 Security Ave, Suite 400</li>
               </ul>
-            </article>
+            </section>
           </div>
-        </section>
+        </footer>
       </main>
     </div>
   );
